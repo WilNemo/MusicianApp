@@ -58,3 +58,9 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+
+// healthcheck
+router.get('/health', (req, res) => {
+res.status('200').send("Status: ok!");
+});
+
